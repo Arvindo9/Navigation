@@ -55,5 +55,16 @@ public class Fragment3 extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_fragment3_to_fragment1);
             }
         });
+
+        view.findViewById(R.id.fragment4btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment3Directions.ActionFragment3ToFragment4 action =
+                        Fragment3Directions.actionFragment3ToFragment4(model, "Boka");
+
+                Navigation.findNavController(view).navigate(action);
+            }
+        });
     }
 }

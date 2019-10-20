@@ -40,6 +40,7 @@
 
 
     <!--Fragment 3 to 1, clearing all back stack-->
+    <!--Fragment 3 to 4, passing data using Safe Args-->
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.navigation.fragments.Fragment3"
@@ -72,5 +73,30 @@
             app:argType="com.example.navigation.model.Model"
             />
 
+        <action
+            android:id="@+id/action_fragment3_to_fragment4"
+            app:destination="@id/fragment4"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"/>
+    </fragment>
+
+    <!--Fragment 4, receive data-->
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="com.example.navigation.fragments.Fragment4"
+        android:label="fragment_fragment4"
+        tools:layout="@layout/fragment_fragment4" >
+
+        <argument
+            android:name="modelData"
+            app:argType="com.example.navigation.model.Model"
+            />
+
+        <argument
+            android:name="StringData"
+            app:argType="string"
+            />
     </fragment>
 </navigation>

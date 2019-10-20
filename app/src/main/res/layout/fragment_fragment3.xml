@@ -40,12 +40,23 @@
         android:id="@+id/ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ok"
+        android:text="fragment 1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".4" />
+
+
+    <Button
+        android:id="@+id/fragment4btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fragment 4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ok" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
